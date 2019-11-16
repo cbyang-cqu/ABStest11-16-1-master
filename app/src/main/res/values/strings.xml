@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">ABStest</string>
+    <string-array name="study_view_spinner_values">
+        <item>ABS分离路面制动偏航响应</item>
+        <item>ABS效率与减速均匀性</item>
+        <item>ABS直线制动偏航响应</item>
+        <item>ABS转换响应</item>
+        <item>ESC冰雪路面测试</item>
+        <item>ESC高速测试</item>
+        <item>ESC沥青路面测试</item>
+        <item>转弯制动</item>
+        <item>转向测试</item>
+    </string-array>
+
+    <!--String集合：main_activity中的 name -->
+    <string name="title_activity_main1">MainActivity1</string><!--AndroidManifest中的Activity名-->
+    <string name="daohang_activity_main1">底盘控制性能试验可视化系统终端</string><!--导航部分-->
+    <string name="biaoti_activity_main1">底盘控制性能试验可视化系统</string>     <!--标题部分-->
+    <string name="car_activity_main1">车辆型号:</string>          <!--label部分：车辆型号-->
+    <string name="project_activity_main1">项目编号:</string>      <!--label部分：项目编号-->
+    <string name="driver_activity_main1">驾驶员姓名:</string>     <!--label部分：驾驶员-->
+    <string name="engineer_activity_main1">发动机:</string>       <!--label部分：发动机-->
+    <string name="gooster_activity_main1">制动助力器:</string>    <!--label部分：助力器-->
+    <string name="gearbox_activity_main1">变速箱:</string>        <!--label部分：变速箱-->
+    <string name="tyre_activity_main1">轮胎尺寸:</string>         <!--label部分：轮胎尺寸-->
+    <string name="place_activity_main1">测试地点:</string>        <!--label部分：测试规范-->
+    <string name="date_activity_main1">测试日期:</string>         <!--label部分：测试时间-->
+    <string name="rule_activity_main1">测试规范:</string>         <!--label部分：测试规范-->
+    <string name="readbutton_activity_main1">阅读操作指导</string><!--button部分：阅读按钮-->
+
+    <string-array name="carBrand_array">
+        <item>K-car</item>
+        <item>GEM</item>
+        <item>Alpha</item>
+    </string-array>  <!--array:车辆型号1-->
+    <string-array name="carBrand_num">
+        <item>215</item>
+        <item>218</item>
+        <item>228</item>
+        <item>229</item>
+        <item>256</item>
+        <item>358</item>
+    </string-array>    <!--array:车辆型号2-->
+    <string-array name="place">
+        <item>GDPG</item>
+        <item>HHPG</item>
+        <item>HNPG</item>
+        <item>BJPG</item>
+        <item>XJPG</item>
+        <item>PATAC</item>
+    </string-array>           <!--array:测试地点-->
+    <string-array name="year">
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+    </string-array>            <!--array:测试年份-->
+    <string-array name="month">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>           <!--array:测试月份-->
+    <string-array name="day">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>26</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>             <!--array:测试日-->
+    <string-array name="testtype">
+        <item>TCS</item>
+        <item>ESC</item>
+        <item>ABS</item>
+    </string-array>        <!--array:测试规范1-->
+    <string-array name="testname_ABS">
+        <item>GMW15052 弯中制动</item>
+        <item>GMW15209 制动时转向</item>
+        <item>GMW15341 A制动辅助系统性能</item>
+        <item>GMW14920 直线制动横摆响应</item>
+        <item>GMW15050 效率和减速度均一性</item>
+        <item>GMW15417 对接路面制动响应时间</item>
+        <item>GMW15053 分离路面制动横摆响应</item>
+        <item>GMW15452 制动的干沥青单变线110KPH</item>
+        <item>GMW15453 制动的冰面单变线70khp</item>
+        <item>GMW15454 制动的雪面单变线100KPH</item>
+    </string-array>        <!--array:测试规范2-->
+    <string-array name="testname_TCS">
+        <item>GMW15051 弯中加速</item>
+        <item>GMW15123 系统直线性能</item>
+        <item>GMW15456 发动机拖滞控制-直线快松油门</item>
+        <item>GMW15457 发动机拖滞控制-弯中快松油门</item>
+    </string-array>        <!--array:测试规范2-->
+    <string-array name="testname_ECS">
+        <item>GMW14556 麋鹿测试</item>
+        <item>GMW15254 鱼钩测试</item>
+        <item>GMW15534 停滞正弦测试</item>
+        <item>GMW15125 冰面50kph双变线</item>
+        <item>GMW15126 雪面70kph双变线</item>
+        <item>GMW15452 制动的干沥青单变线110KPH</item>
+        <item>GMW15453 制动的冰面单变线70khp</item>
+        <item>GMW15454 制动的雪面单变线100KPH</item>
+        <item>GMW15124 干沥青路面80kph双变线</item>
+        <item>GMW15376 斜坡脉冲转向最大Ay测定</item>
+        <item>GMW15455 电子稳定程序 高速试验</item>
+    </string-array>        <!--array:测试规范2-->
+
+    <!--String集合：read_activity中的 name -->
+    <string name="title_activity_read">MainActivity1</string><!--AndroidManifest中的Activity名-->
+    <string name="title_top_read">XXXXXX操作指导书</string>     <!--标题部分-->
+    <string name="aim_content_read">本试验操作规范，旨在考查汽车零部件的高低温性能，规范性能检测方法。
+        </string>     <!--guide:操作目的-->
+    <string name="caution_content_read">安全：高低温实验前，必须检查湿球纱布，稳定设定值在规定范围内，照明灯打开，试验箱必须安全接地，适用于凯迪拉克CT6
+        </string>     <!--guide:操作注意-->
+    <string name="opera_content_read">操作步骤：\n
+        1、配电柜接通电源，打开此设备开关；\n
+        2、进入界面需要密码验证（密码：123456），此密码可以自己设定；\n
+        3、进入操作界面，在主界面找程序设定，设置程序号、实验名称、温度、时间、湿度等；\n
+        4、返回主界面，再进入监控界面，在温度栏输入程序号，更改各项参数，按ENTER输入，运行；\n
+        1、配电柜接通电源，打开此设备开关；\n
+        2、进入界面需要密码验证（密码：123456），此密码可以自己设定；\n
+        3、进入操作界面，在主界面找程序设定，设置程序号、实验名称、温度、时间、湿度等；\n
+        4、返回主界面，再进入监控界面，在温度栏输入程序号，更改各项参数，按ENTER输入，运行；\n
+        1、配电柜接通电源，打开此设备开关；\n
+        2、进入界面需要密码验证（密码：123456），此密码可以自己设定；\n
+        3、进入操作界面，在主界面找程序设定，设置程序号、实验名称、温度、时间、湿度等；\n
+        4、返回主界面，再进入监控界面，在温度栏输入程序号，更改各项参数，按ENTER输入，运行；\n
+    </string>     <!--guide:操作步骤-->
+    <string name="radio_done_read">&#160;&#160;&#160;&#160;我已阅读全部试验指导须知</string>     <!--radio:是否阅读-->
+    <string name="button_start_read">开始试验</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>         <!--button:开始试验-->
+</resources>

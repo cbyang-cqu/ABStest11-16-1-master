@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcf8f8"
+    android:orientation="vertical">
+
+    <!--顶部导航部分-->
+    <LinearLayout
+        android:id="@+id/topNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="208px"
+        android:background="@color/main_activity_top"
+        android:orientation="horizontal">
+            <ImageView
+                android:layout_width="126px"
+                android:layout_height="150px"
+                android:layout_marginStart="66px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/main_top_logo1"/>
+            <TextView
+                android:id="@+id/xi"
+                android:layout_width="857px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75px"
+                android:layout_gravity="center_vertical"
+                android:text="@string/daohang_activity_main1"
+                android:textColor="#000"
+                android:textSize="56px"/>
+            <ImageView
+                android:layout_width="218px"
+                android:layout_height="114px"
+                android:layout_marginStart="181px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/main_top_logo2"/>
+    </LinearLayout>
+
+    <!--顶部标题-->
+    <TextView
+        android:id="@+id/topTitle"
+        android:layout_width="846px"
+        android:layout_height="84px"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="101px"
+        android:text="@string/biaoti_activity_main1"
+        android:textColor="#000"
+        android:textSize="65px"/>
+
+    <!--内容栏：车辆型号选择!-->
+    <LinearLayout
+        android:id="@+id/content_car"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginTop="120px"
+        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/car"
+                android:layout_width="280px"
+                android:layout_height="90px"
+                android:layout_marginStart="76px"
+                android:text="@string/car_activity_main1"
+                android:textColor="#000"
+                android:textSize="56px"/>
+            <Spinner
+                android:id="@+id/spinner_carBrand"
+                android:layout_width="379px"
+                android:layout_height="84px"
+                android:layout_marginStart="7px"
+                android:background="#f9f5f5"
+                android:entries="@array/carBrand_array"
+                android:layout_marginEnd="32px"
+                android:textSize="56px"/>
+            <Spinner
+                android:id="@+id/spinner_carNum"
+                android:layout_width="681px"
+                android:layout_height="84px"
+                android:background="#f9f5f5"
+                android:entries="@array/carBrand_num"
+                android:layout_marginEnd="23px"
+                android:textSize="56px"/>
+    </LinearLayout>
+
+    <!--内容栏：项目编号+驾驶员信息!-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110px"
+        android:orientation="horizontal">
+        <!--内容填写：项目编号!-->
+        <RelativeLayout
+            android:layout_width="606px"
+            android:layout_height="90px"
+            android:layout_marginStart="81px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/project"
+                android:layout_width="280px"
+                android:layout_height="wrap_content"
+                android:text="@string/project_activity_main1"
+                android:textColor="#000"
+                android:textSize="56px"/>
+
+            <EditText
+                android:id="@+id/edit_project"
+                android:layout_width="339px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7px"
+                android:layout_toRightOf="@+id/project"
+                android:gravity="left"
+                android:textColor="#000"
+                android:textSize="52px" />
+        </RelativeLayout>
+
+        <!--内容填写：驾驶员姓名!-->
+        <RelativeLayout
+            android:layout_width="606px"
+            android:layout_height="90px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/driver"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:text="@string/driver_activity_main1"
+                android:textColor="#000"
+                android:textSize="56px"/>
+
+            <EditText
+                android:id="@+id/edit_driver"
+                android:layout_width="339px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/driver"
+                android:gravity="left"
+                android:textColor="#000"
+                android:textSize="52px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--内容栏：发动机+制动助力器!-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110px"
+        android:orientation="horizontal">
+        <!--内容填写：发动机!-->
+        <RelativeLayout
+            android:layout_width="606px"
+            android:layout_height="90px"
+            android:layout_marginStart="81px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/engineer"
+                android:layout_width="280px"
+                android:layout_height="wrap_content"
+                android:text="发 动 机："
+                android:textColor="#000"
+                android:textSize="56px"/>
+            <EditText
+                android:id="@+id/edit_engineer"
+                android:layout_width="339px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/engineer"
+                android:gravity="left"
+                android:layout_marginStart="7px"
+                android:textSize="52px"
+                android:textColor="#000"/>
+        </RelativeLayout>
+
+        <!--内容填写：制动助力器!-->
+        <RelativeLayout
+            android:layout_width="606px"
+            android:layout_height="90px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/gooster"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:text="@string/gooster_activity_main1"
+                android:textColor="#000"
+                android:textSize="56px"/>
+
+            <EditText
+                android:id="@+id/edit_gooster"
+                android:layout_width="339px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/gooster"
+                android:gravity="left"
+                android:textColor="#000"
+                android:textSize="52px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--内容栏：变速箱+轮胎尺寸!-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110px"
+        android:orientation="horizontal">
+        <!--内容填写：变速箱!-->
+        <RelativeLayout
+            android:layout_width="606px"
+            android:layout_height="90px"
+            android:layout_marginStart="81px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/gearbox"
+                android:layout_width="280px"
+                android:layout_height="wrap_content"
+                android:text="变 速 箱："
+                android:textColor="#000"
+                android:textSize="56px"/>
+
+            <EditText
+                android:id="@+id/edit_gearbox"
+                android:layout_width="339px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7px"
+                android:layout_toRightOf="@+id/gearbox"
+                android:gravity="left"
+                android:textColor="#000"
+                android:textSize="52px" />
+        </RelativeLayout>
+
+        <!--内容填写：轮胎尺寸!-->
+        <RelativeLayout
+            android:layout_width="606px"
+            android:layout_height="90px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tyre"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:text="@string/tyre_activity_main1"
+                android:textColor="#000"
+                android:textSize="56px"/>
+
+            <EditText
+                android:id="@+id/edit_tyre"
+                android:layout_width="339px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tyre"
+                android:gravity="left"
+                android:textColor="#000"
+                android:textSize="52px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--内容栏：测试地点选择-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110px"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="606px"
+            android:layout_height="90px"
+            android:layout_marginStart="81px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <!--label:测试地点-->
+            <TextView
+                android:id="@+id/place"
+                android:layout_width="280px"
+                android:layout_height="wrap_content"
+                android:text="@string/place_activity_main1"
+                android:textColor="#000"
+                android:textSize="56px"/>
+
+            <!--下拉框：测试地点-->
+            <Spinner
+                android:id="@+id/spinner_place"
+                android:layout_width="486px"
+                android:layout_height="84px"
+                android:layout_toRightOf="@+id/place"
+                android:layout_marginStart="7px"
+                android:background="#f9f5f5"
+                android:entries="@array/place"
+                android:layout_marginEnd="32px"
+                android:textSize="56px"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--内容栏：测试时间选择-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110px"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="606px"
+            android:layout_height="90px"
+            android:layout_marginStart="81px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <!--label：测试日期-->
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="280px"
+                android:layout_height="wrap_content"
+                android:text="@string/date_activity_main1"
+                android:textColor="#000"
+                android:textSize="56px"/>
+
+            <!--下拉框：年-->
+            <Spinner
+                android:id="@+id/spinner_year"
+                android:layout_width="241px"
+                android:layout_height="84px"
+                android:layout_toRightOf="@+id/time"
+                android:layout_marginStart="7px"
+                android:background="#f9f5f5"
+                android:entries="@array/place"
+                android:layout_marginEnd="32px"
+                android:textSize="56px"/>
+
+            <!--字：年-->
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/spinner_year"
+                android:text="年"
+                android:textColor="#000"
+                android:textSize="56px"/>
+
+            <!--下拉框：月-->
+            <Spinner
+                android:id="@+id/spinner_month"
+                android:layout_width="202px"
+                android:layout_height="84px"
+                android:layout_toRightOf="@+id/year"
+                android:layout_marginStart="7px"
+                android:background="#f9f5f5"
+                android:entries="@array/place"
+                android:layout_marginEnd="32px"
+                android:textSize="56px"/>
+
+            <!--文字：月-->
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/spinner_month"
+                android:text="月"
+                android:textColor="#000"
+                android:textSize="56px"/>
+
+            <!--下拉框：日-->
+            <Spinner
+                android:id="@+id/spinner_day"
+                android:layout_width="202px"
+                android:layout_height="84px"
+                android:layout_toRightOf="@+id/month"
+                android:layout_marginStart="7px"
+                android:background="#f9f5f5"
+                android:entries="@array/day"
+                android:layout_marginEnd="32px"
+                android:textSize="56px"/>
+
+            <!--文字：日-->
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/spinner_day"
+                android:text="日"
+                android:textColor="#000"
+                android:textSize="56px"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--内容栏：测试规范选择-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110px"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="606px"
+            android:layout_height="90px"
+            android:layout_marginStart="81px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <!--label：测试规范-->
+            <TextView
+                android:id="@+id/rule"
+                android:layout_width="280px"
+                android:layout_height="wrap_content"
+                android:text="@string/rule_activity_main1"
+                android:textColor="#000"
+                android:textSize="56px"/>
+
+            <!--下拉框：操作规范1-->
+            <Spinner
+                android:id="@+id/spinner_testtype"
+                android:layout_width="196px"
+                android:layout_height="84px"
+                android:layout_toRightOf="@+id/rule"
+                android:layout_marginStart="7px"
+                android:background="#f9f5f5"
+                android:entries="@array/testtype"
+                android:layout_marginEnd="32px"
+                android:textSize="56px"/>
+
+            <!--下拉框：操作规范2-->
+            <Spinner
+                android:id="@+id/spinner_testname"
+                android:layout_width="823px"
+                android:layout_height="84px"
+                android:layout_toRightOf="@+id/spinner_testtype"
+                android:layout_marginStart="7px"
+                android:background="#f9f5f5"
+
+                android:layout_marginEnd="32px"
+                android:textSize="56px"/>
+            <!--android:entries="@array/testname_ABS"-->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--按钮：阅读操作指导-->
+    <Button
+        android:id="@+id/button_readInstruction"
+        android:layout_width="430px"
+        android:layout_height="139px"
+        android:layout_marginTop="254px"
+        android:layout_marginLeft="1084px"
+        android:onClick="OnNext"
+        android:background="@color/main_activity_button_read"
+        android:textSize="56px"
+        android:text="@string/readbutton_activity_main1" />
+
+    <!--空白：用于帮助底部image和底端对齐-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+    </LinearLayout>
+
+    <!--底部：公司图片信息-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="222px"
+        android:background="@drawable/main_bottom_brand" />
+</LinearLayout>

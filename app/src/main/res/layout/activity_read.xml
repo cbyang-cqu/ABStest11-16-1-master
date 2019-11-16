@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcf8f8"
+    android:orientation="vertical">
+
+    <!--顶部导航部分-->
+    <LinearLayout
+        android:id="@+id/topNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="208px"
+        android:background="@color/main_activity_top"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="126px"
+            android:layout_height="150px"
+            android:layout_marginStart="66px"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/main_top_logo1"/>
+        <TextView
+            android:id="@+id/xi"
+            android:layout_width="857px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75px"
+            android:layout_gravity="center_vertical"
+            android:text="@string/daohang_activity_main1"
+            android:textColor="#000"
+            android:textSize="56px"/>
+        <ImageView
+            android:layout_width="218px"
+            android:layout_height="114px"
+            android:layout_marginStart="181px"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/main_top_logo2"/>
+    </LinearLayout>
+
+    <!--顶部标题:XXX指导书-->
+    <TextView
+        android:id="@+id/topTitle_read"
+        android:layout_width="1200px"
+        android:layout_height="130px"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="81px"
+        android:text="@string/title_top_read"
+        android:textColor="#000"
+        android:textSize="56px"/>
+
+
+    <!--内容栏：实验目的 + 试验注意 + 实验步骤!-->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="1630px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="76px">
+    <LinearLayout
+        android:id="@+id/content_read"
+        android:layout_width="1457px"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--guide：实验目的!-->
+        <TextView
+            android:id="@+id/content_aim_read"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:text="@string/aim_content_read"
+            android:lineSpacingExtra="10px"
+            android:textColor="#000"
+            android:textSize="56px"/>
+        <!--guide：实验注意!-->
+        <TextView
+            android:id="@+id/content_caution_read"
+            android:layout_width="match_parent"
+            android:layout_height="360px"
+            android:text="@string/caution_content_read"
+            android:lineSpacingExtra="10px"
+            android:textColor="#000"
+            android:textSize="56px"/>
+        <!--guide：实验步骤!-->
+        <TextView
+            android:id="@+id/content_opera_read"
+            android:layout_width="match_parent"
+            android:layout_height="1800px"
+            android:text="@string/opera_content_read"
+            android:lineSpacingExtra="10px"
+            android:textColor="#000"
+            android:textSize="56px"/>
+    </LinearLayout>
+    </ScrollView>
+
+    <!--button栏：是否阅读完毕+开始试验!-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320px"
+        android:layout_marginTop="82px"
+        android:orientation="vertical">
+        <!--radiobutton：是否已经阅读完毕!-->
+        <RadioButton
+            android:id="@+id/radio_done_read"
+            android:button="@drawable/radio_button_read"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:layout_marginStart="100px"
+            android:text="@string/radio_done_read"
+            android:textColor="@color/black_overlay"
+            android:textSize="50px" />
+        <!--button：开始试验!-->
+        <Button
+            android:id="@+id/button_done_read"
+            android:layout_width="340px"
+            android:layout_height="100px"
+            android:background="#D7D7D7"
+            android:layout_marginStart="1178px"
+            android:layout_marginTop="104px"
+            android:text="@string/button_start_read"
+            android:onClick="OnNext1"
+            android:textSize="56px"/>
+    </LinearLayout>
+
+    
+
+
+</LinearLayout>

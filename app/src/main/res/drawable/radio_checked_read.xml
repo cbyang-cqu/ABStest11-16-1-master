@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--设置圆角大小-->
+    <corners android:radius="28dp" />
+    <!--设置外轮廓大小-->
+    <size
+        android:width="56px"
+        android:height="56px" />
+    <!--设置内部实心颜色-->
+    <solid
+        android:color="#f9f9f9"/>
+    <!--设置外环大小和颜色-->
+    <stroke
+        android:width="10px"
+        android:color="#267edb" />
+</shape>
